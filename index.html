@@ -37,17 +37,27 @@
     .insta-btn {
     display: inline-block;
     margin-top: 15px;
-    padding: 10px 20px;
-    background: #474047;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    background-size: 300% 300%;
     color: white;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 30px;
     font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    animation: instaGradient 4s ease infinite;
     transition: 0.3s;
 }
 
 .insta-btn:hover {
-    background: #1d2026;
+    transform: scale(1.08);
+}
+
+@keyframes instaGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
     .link-box {
